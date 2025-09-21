@@ -17,7 +17,7 @@ function Header() {
         
                 {/* Left Nav */}
                 <div className="hidden md:flex absolute left-1/3 -translate-x-full space-x-10  gap-10  text-lg font-semibold">
-                 <Link to="/home" ><li className="cursor-pointer list-none">Home</li></Link>
+                 <Link to="/" ><li className="cursor-pointer list-none">Home</li></Link>
                  <Link to="/explore" ><li className="cursor-pointer list-none">Explore</li></Link>
                  <Link to="/trending" > <li className="cursor-pointer list-none">Trending</li></Link>
                 </div>
