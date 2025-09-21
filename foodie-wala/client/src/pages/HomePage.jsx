@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeCarousel from '../components/homeCarousel'
+import HomeCarousel from '../components/HomeCarousel'
 import RestaurantCard from '../components/RestaurantCard'
 
 function HomePage() {
