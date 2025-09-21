@@ -25,10 +25,9 @@ if (!PUBLISHABLE_KEY) {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path='/' element={<LandingPage />} />
 
       <Route element={<App />}>
-        <Route path='home' element={<HomePage />} />
+        <Route path='/' element={<HomePage />} />
         <Route path='login' element={<LoginPage />} />
         <Route path='signUp' element={<SignupPage />} />
         <Route path='explore' element={<ExplorePage />} />
