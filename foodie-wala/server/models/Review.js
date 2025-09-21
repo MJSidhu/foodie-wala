@@ -1,0 +1,15 @@
+import mongoose from "mongoose";
+
+const reviewSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+  restaurantId: { type: mongoose.Schema.Types.ObjectId, ref: "Restaurant", required: true },
+  
+  text: String,
+  rating: { type: Number, min: 1, max: 5 },
+  thumbsUp: { type: Number, default: 0 },
+  thumbsDown: { type: Number, default: 0 },
+
+  createdAt: { type: Date, default: Date.now },
+});
+
+export default mongoose.model("Review", reviewSchema);
