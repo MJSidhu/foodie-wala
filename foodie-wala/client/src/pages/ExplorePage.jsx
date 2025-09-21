@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import SearchBar from '../components/searchBar'
+import SearchBar from '../components/SearchBar'
 import { LocateFixed } from 'lucide-react';
 import Tab from '../components/Tab';
 import RestaurantCard from '../components/RestaurantCard';
