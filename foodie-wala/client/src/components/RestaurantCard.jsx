@@ -1,9 +1,14 @@
 import React from 'react'
 import img from "../assets/forYou.jpg"
+import { useNavigate } from 'react-router-dom'
 function RestaurantCard({classname="",title="TITLE OF RESTAURANT",cusine="Indian, Chinese, Continental",location="Gajuwaka, Vizag",distance="5km",small=false}) {
+  const navigate=useNavigate();
+  const handleClick=()=>{
+    navigate("/restaurant/68c3681201b2c7953a60ef51");
+  }
   return (
     <>
-      <div className={`p-2  rounded-lg shadow-md  bg-white hover:scale-102 hover:shadow-xl transition-transform duration-300 ${classname}`}>
+      <div className={`p-2  rounded-lg shadow-md  bg-white hover:scale-102 hover:shadow-xl transition-transform duration-300 ${classname}`} onClick={handleClick}>
         
         {/* Image */}
         { !small && <div className="w-full">

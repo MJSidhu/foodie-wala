@@ -25,7 +25,7 @@ function ExplorePage() {
   }
   const [searchTerm, setsearchTerm] = useState("");
 
-  const category = ["Indian", "Italian", "Cafe", "Bakery", "Family-Friendly", "Budget-Friendly", " Vegan/Healthy", "Top Rated", " Recently-Added", "chineese", "clean", "hello", "brooo", "byeee"]
+  const category = ["Indian", "Italian", "Cafe", "Bakery", "Family-Friendly", "Budget-Friendly", " Vegan/Healthy", "Top Rated", " Recently-Added", "chineese", "clean",]
 
   useEffect(() => {
     console.log(location);
